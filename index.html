@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glaze Flora | Bloom with Beauty</title>
+  <link rel="website icon" type="png" href="florist (2).png"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🌸Glaze Flora</div>
+    <nav>
+      <ul>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#vision">Vision</a>
+        <a href="#mission">Mission</a>
+        <a href="#about">About</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#contact">Contact</a>
+        <a href="#why Choose Us?">Why Choose Us?</a>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Best Sellers</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="rose1.jpg" alt="Rose Bouquet" />
+        <h3>Rose</h3>
+        <p>₱75.00</p>
+        <p> Perfect for expressing love and admiration.</p>
+        <button class="buy-btn pop">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="tulip1.jpg" alt="Tulip" />
+        <h3>Tulip</h3>
+        <p>₱75.00</p>
+        <p>Tulips for joyful occasions.</p>
+        <button class="buy-btn pop">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="sunflower1.jpg" alt="Sunflower" />
+        <h3>Sunflower</h3>
+        <p>₱75.00</p> 
+        <p>Sunflower for timeless beauty.</p>
+        <button class="buy-btn pop">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="flower1.jpg">
+        <h3>Rose Bouquet</h3>
+        <p>₱150.00</p>
+        <button class="buy-btn pop">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="flower3.jpg">
+        <h3>Tulips Bouquet</h3>
+        <p>₱150.00</p>
+        <button class="buy-btn pop">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="flower4.jpg">
+        <h3>Sunflower Bouquet</h3>
+        <p>₱150.00</p>
+        <button class="buy-btn pop">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="money.jpg">
+        <h3>Money Bouquet</h3>
+        <p>₱150.00</p>
+        <button class="buy-btn pop">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="vision" class="info-section">
+    <div class="mv-wrapper"></div>
+    <h2>Our Vision</h2>
+    <div class="feedback-grid">
+      <div class="feedback-card">
+    <p>To become the leading floral boutique known for creativity, quality, and passion for nature’s artistry.</p>
+    </section>
+  
+  <section id="mission" class="info-section">
+    <h2>Our Mission</h2>
+    <div class="feedback-grid">
+      <div class="feedback-card">
+    <p>To bring joy and elegance through beautifully crafted floral designs that celebrate every emotion and occasion.</p>
+  </section>
+      
+
+  <section id="about" class="info-section">
+    <h2>About Glaze Flora</h2>
+    <div class="feedback-grid">
+      <div class="feedback-card">
+    <p>Glaze Flora started as a small business with a big dream—to make every moment bloom with color and meaning. We source our flowers locally and ensure each arrangement is crafted with care.</p>
+  </section>
+
+  <section id="feedback" class="feedback">
+    <h2>Customer Feedback</h2>
+    <div class="feedback-grid">
+      <div class="feedback-card">
+      </div>
+      <div class="feedback-card">
+    </div>
+  </section>
+
+  <section id="why Choose Us?" class="info-section">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <h3>🌷 Handmade flowers made with love and passion</h3>
+      <h3>🚚 2-3 days delivery available</h3>
+      <h3>🎀 Elegant and customizable designs</h3>
+      <h3>💬 Friendly and responsive support</h3>
+    </ul>    <h2>Contact Us</h2>
+    <p>Email: glaze.florashop@gmail.com</p>
+    <p>Phone: 0905 661 3979</p>
+    <div class="wrapper">
+    <div class="button">
+      <div class="icon">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Glaze Flora | All Rights Reserved</p>
+  <div class="social-links">
+    <a href="https://www.facebook.com/facebook.com/profile.php?id=61556549574421&mibextid=ZbWKwL" target="_blank">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" 
+       alt="Facebook" width="50" height="50">
+    </a>
+    <a href="https://www.instagram.com/instagram.com/glxsyyz" target="_blank">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+       alt="Instagram" width="50" height="50">
+    </a>
+  </div>
+</footer>
+
+  </footer>
+
+  <script>
+    const navLinks = document.querySelectorAll(".nav-links a");
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+      const targetI = link.getAttribute(href);
+      const targetSection = document.querySelector(targetI);
+      if (targetSection) {
+        const aniElements = targetSection.querySelectorAll(
+          ".pop, .left, .right"
+        );
+        aniElements.forEach((el, index) => {
+          el.style.animation = "none";
+          void el.offsetWidth;
+          el.style.animation = "";
+        });
+      }
+    });
+    });
+        

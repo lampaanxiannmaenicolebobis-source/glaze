@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #F5CBCB;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+header {
+  background-color: #F2AEBB;
+  color: #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d63384;
+}
+
+.hero {
+  background: url('background.jpg') center/cover no-repeat;
+  color: #FFC6C6;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin: 15px 0 30px;
+}
+
+.btn {
+  background-color: #d63384;
+  color: #fde6ef;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-top: 8px;
+}
+
+.buy-btn:hover {
+  background-color: #b82c70;
+}
+
+.choose {
+  background: black;
+  color: #E5BEB5;
+  padding: 100px 20x;
+  text-align: center;
+}
+
+.choose-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.products {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.products h2 {
+  color: #d63384;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #fde6ef;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.info-section {
+  display: grid;
+  padding: 55px 30px;
+  text-align: center;
+  background: #FFDCDC;
+  align-items: space-evenly;
+}
+
+.info-section h2 {
+  color: black;
+  margin-bottom: 15px;
+}
+
+.info-section-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: space-evenly;
+}
+
+.info-section-card {
+  background: #F7B5CA;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-section-card span {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.feedback {
+  background-color: #fde6ef;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.feedback-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.feedback-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-card span {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.contact {
+  background-color: #fde6ef;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact h2 {
+  color: #d63384;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: powderblue;
+  transition: 0.3s;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: violet;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.social:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social.facebook:hover span {color: blue;}
+.social.instagram:hover span {color: #1DA1F2;}
+
+footer {
+  background-color: #3a3a3a;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+.pop{
+  opacity: 0;
+  transform: scale(0..5);
+  animation: slidePop 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes slidePop {
+  from{
+    opacity: 0;
+    transform: scale(0.5);
+  }
+    to{
+    opacity: 1;
+    transform: scale(1);
+    }
+}
+
+@media (max-width: 1024px) {
+
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 993px) {
+  
+}
+
+.fd{
+  height: 700vh;
+}
